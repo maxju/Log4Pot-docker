@@ -1,0 +1,17 @@
+version: "3.9"
+services:
+  app:
+    build: .
+    ports:
+      - 80:80
+      - 443:443
+      - 8000:8000
+      - 8008:8008
+      - 8080:8080
+      - 8081:8081
+      - 8443:8443
+      - 8983:8983
+      - 9200:9200
+    volumes:
+      - /path/to/log4pot.conf:/app/log4pot.conf
+      - /etc/letsencrypt/.../cert.pem:/certs/cert.pem
