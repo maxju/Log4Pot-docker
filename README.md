@@ -1,8 +1,8 @@
 # Log4Pot-docker
 Docker Image for Thomas Patzke's <a href="https://github.com/thomaspatzke/Log4Pot">Log4Pot</a>
 ## Run Image as Container
+Note: you will need to specify ports using `-p ...` *and* using the `ARGUMENTS` environment variable as shown above.
 - `docker run maxju/log4pot -p 8080:8080 -e ARGUMENTS="--port 8080"`
-Note: you will need to specify ports using `-p ...` *and* using the `ARGUMENTS` environment variale as shown above.
 ### Run with HTTPS
 If you want to use HTTPS you need to mount a certificate to `/certs/cert.pem` inside the container. The file will need to have both the private key and the fullchain in it.
 - `docker run maxju/log4pot -v /path/to/certificate/file.pem:/certs/cert.pem -p 443:443 -e ARGUMENTS="--port S443"`
