@@ -1,5 +1,6 @@
 # Log4Pot-docker
 Docker Image for Thomas Patzke's <a href="https://github.com/thomaspatzke/Log4Pot">Log4Pot</a>
+<a href="https://hub.docker.com/r/maxju/log4pot">View on Docker Hub</a>
 ## Run Image as Container
 Note: you will need to specify ports using `-p ...` *and* using the `ARGUMENTS` environment variable as shown above.
 - `docker run maxju/log4pot -p 8080:8080 -e ARGUMENTS="--port 8080"`
